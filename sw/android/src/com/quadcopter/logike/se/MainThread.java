@@ -3,6 +3,7 @@ package com.quadcopter.logike.se;
 import com.quadcopter.logike.se.MessageCodes.Commands;
 import com.quadcopter.logike.se.MessageCodes.Sender;
 import com.quadcopter.logike.se.MessageCodes.Type;
+import com.quadcopter.logike.se.SensorValues.Accelerometer;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,32 +27,40 @@ public class MainThread extends Activity implements Handler.Callback{
 	Handler mainHandler;
 	Handler sensorHandler;
 	TextView xLabel;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_thread);
-        
-        xLabel = (TextView)findViewById(R.id.xValue);
-        
-        mainHandler = new Handler(Looper.getMainLooper(), this);
-        
-        sensorThread = new SensorThread(this, this);
-        sensorThread.start();
-        sensorHandler = new Handler(sensorThread.getLooper(), (Handler.Callback)sensorThread);
-    }
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main_thread);
+
+		xLabel = (TextView)findViewById(R.id.xValue);
+
+		mainHandler = new Handler(Looper.getMainLooper(), this);
+
+		sensorThread = new SensorThread(this, this);
+		sensorThread.start();
+		sensorHandler = new Handler(sensorThread.getLooper(), (Handler.Callback)sensorThread);
+	}
 
 	@Override
 	public boolean handleMessage(Message msg) {
+		Object obj = new Object();
+		
 		switch(msg.what){
 		case Sender.SENSOR_THREAD:
-			if(msg.arg1 == Type.ACCELEROMETER){
+			if(msg.arg1 == Sensor.TYPE_ACCELEROMETER){
 				
-				//float theta_x = eukl2angle(Defines.AngleType.THETA_X, x, y, z);
-				//xLabel.setText(Float.toString(theta_x));
+				try {
+					/* Clone object to send to next thread in the pipeline */
+					obj = ((Accelerometer)(msg.obj)).clone();
+				} catch (CloneNotSupportedException e) {
+					break;
+				}
+				
+				xLabel.setText(Float.toString(((Accelerometer)obj).angle.x));
 			}
 		}
-				
+
 		return true;
 	}
 
@@ -60,23 +69,23 @@ public class MainThread extends Activity implements Handler.Callback{
 		super.onStop();
 		sensorThread.quitSafely();
 	}
-	
+
 	@Override
 	protected void onResume(){
 		super.onResume();
 		sensorThread = new SensorThread(this, this);
-        sensorThread.start();
-        sensorHandler = new Handler(sensorThread.getLooper(), (Handler.Callback)sensorThread);
-		
+		sensorThread.start();
+		sensorHandler = new Handler(sensorThread.getLooper(), (Handler.Callback)sensorThread);
+
 	}
-	
+
 	public void calibrateClick(View v){
 		Message msg = sensorHandler.obtainMessage();
-        msg.what = Sender.MAIN_THREAD;
-        msg.arg1 = Commands.CALIBRATION;
-        msg.arg2 = 500; // calibration steps = 5s @ 100Hz
-        sensorHandler.sendMessage(msg);
+		msg.what = Sender.MAIN_THREAD;
+		msg.arg1 = Commands.CALIBRATION;
+		msg.arg2 = 500; // calibration steps = 5s @ 100Hz
+		sensorHandler.sendMessage(msg);
 	}
-	
-	
+
+
 }
