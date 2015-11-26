@@ -74,7 +74,7 @@ public class MainThread extends Activity implements Handler.Callback{
 		Message msg = sensorHandler.obtainMessage();
         msg.what = Sender.MAIN_THREAD;
         msg.arg1 = Commands.CALIBRATION;
-        msg.arg2 = 5000; // calibration time in ms
+        msg.arg2 = 500; // calibration steps = 5s @ 100Hz
         sensorHandler.sendMessage(msg);
 	}
 	
