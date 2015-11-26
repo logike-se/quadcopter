@@ -2,23 +2,13 @@ package com.quadcopter.logike.se;
 
 import com.quadcopter.logike.se.MessageCodes.Commands;
 import com.quadcopter.logike.se.MessageCodes.Sender;
-import com.quadcopter.logike.se.MessageCodes.Type;
 import com.quadcopter.logike.se.SensorValues.Accelerometer;
-
 import android.app.Activity;
-import android.content.Context;
 import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Handler.Callback;
-import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -44,20 +34,12 @@ public class MainThread extends Activity implements Handler.Callback{
 
 	@Override
 	public boolean handleMessage(Message msg) {
-		Object obj = new Object();
-		
+			
 		switch(msg.what){
 		case Sender.SENSOR_THREAD:
 			if(msg.arg1 == Sensor.TYPE_ACCELEROMETER){
-				
-				try {
-					/* Clone object to send to next thread in the pipeline */
-					obj = ((Accelerometer)(msg.obj)).clone();
-				} catch (CloneNotSupportedException e) {
-					break;
-				}
-				
-				xLabel.setText(Float.toString(((Accelerometer)obj).angle.x));
+				/* show values on display for testing */
+				xLabel.setText(Float.toString(((Accelerometer)msg.obj).angle.x));
 			}
 		}
 

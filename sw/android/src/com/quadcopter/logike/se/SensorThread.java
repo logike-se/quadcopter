@@ -13,7 +13,6 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
-import android.provider.SyncStateContract.Constants;
 
 public class SensorThread extends HandlerThread implements Handler.Callback, SensorEventListener{
 	Handler parentHandler;
@@ -87,7 +86,12 @@ public class SensorThread extends HandlerThread implements Handler.Callback, Sen
 				acc_values.angle = getAnglesFromAcceleration(acc_values.acceleration);
 				acc_values.dt = event.timestamp - acc_values.timestamp;
 				acc_values.timestamp = event.timestamp;
-				msg.obj = acc_values;
+				try {
+					/* Clone before sending to next thread in pipeline */
+					msg.obj = acc_values.clone();
+				} catch (CloneNotSupportedException e) {
+					msg.obj = null;
+				}
 			}
 		}
 		else if(msg.arg1 == Sensor.TYPE_GYROSCOPE_UNCALIBRATED){
