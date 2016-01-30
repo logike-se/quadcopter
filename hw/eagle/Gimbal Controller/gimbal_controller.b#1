@@ -2715,30 +2715,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C8" library="resistor" package="C0805" value="10u" x="22.479" y="18.923" smashed="yes" rot="R135">
 <attribute name="NAME" x="23.749" y="18.65095" size="1.27" layer="25" rot="R135"/>
 </element>
-<element name="R1" library="rcl" package="R0805" value="200" x="16.256" y="2.032" smashed="yes">
-<attribute name="NAME" x="15.367" y="1.524" size="1.27" layer="25"/>
-<attribute name="VALUE" x="15.621" y="-0.508" size="1.27" layer="27"/>
-</element>
-<element name="R2" library="rcl" package="R0805" value="200" x="16.256" y="5.334" smashed="yes">
-<attribute name="NAME" x="15.621" y="4.826" size="1.27" layer="25"/>
-<attribute name="VALUE" x="15.621" y="2.794" size="1.27" layer="27"/>
-</element>
-<element name="R3" library="rcl" package="R0805" value="200" x="16.256" y="8.636" smashed="yes">
-<attribute name="NAME" x="15.621" y="8.128" size="1.27" layer="25"/>
-<attribute name="VALUE" x="15.621" y="6.096" size="1.27" layer="27"/>
-</element>
-<element name="R4" library="rcl" package="R0805" value="200" x="16.256" y="11.938" smashed="yes">
-<attribute name="NAME" x="15.367" y="11.176" size="1.27" layer="25"/>
-<attribute name="VALUE" x="15.621" y="9.398" size="1.27" layer="27"/>
-</element>
-<element name="R5" library="rcl" package="R0805" value="200" x="16.256" y="15.24" smashed="yes">
-<attribute name="NAME" x="15.367" y="14.732" size="1.27" layer="25"/>
-<attribute name="VALUE" x="15.621" y="12.7" size="1.27" layer="27"/>
-</element>
-<element name="R6" library="rcl" package="R0805" value="200" x="16.256" y="18.542" smashed="yes">
-<attribute name="NAME" x="15.367" y="18.034" size="1.27" layer="25"/>
-<attribute name="VALUE" x="15.621" y="16.002" size="1.27" layer="27"/>
-</element>
+<element name="R1" library="rcl" package="R0805" value="200" x="16.256" y="2.032" smashed="yes"/>
+<element name="R2" library="rcl" package="R0805" value="200" x="16.256" y="5.334" smashed="yes"/>
+<element name="R3" library="rcl" package="R0805" value="200" x="16.256" y="8.636" smashed="yes"/>
+<element name="R4" library="rcl" package="R0805" value="200" x="16.256" y="11.938" smashed="yes"/>
+<element name="R5" library="rcl" package="R0805" value="200" x="16.256" y="15.24" smashed="yes"/>
+<element name="R6" library="rcl" package="R0805" value="200" x="16.256" y="18.542" smashed="yes"/>
 <element name="R8" library="rcl" package="R0805" value="10k" x="28.956" y="2.794" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.463996875" y="1.651003125" size="1.27" layer="25" rot="R90"/>
 </element>
