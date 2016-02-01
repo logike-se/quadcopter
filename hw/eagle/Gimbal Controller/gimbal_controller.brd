@@ -72,6 +72,7 @@
 <wire x1="2.413" y1="8.128" x2="8.509" y2="8.128" width="0.508" layer="21"/>
 <text x="48.768" y="23.622" size="0.762" layer="21" rot="R90">LiPo 1Cell</text>
 <text x="25.654" y="11.43" size="1.016" layer="21" font="vector" rot="R45">PIC24FJ</text>
+<text x="47.244" y="23.622" size="1.016" layer="23" rot="R90">BATT</text>
 </plain>
 <libraries>
 <library name="con-molex">
@@ -2688,12 +2689,11 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BATT" library="con-molex" package="22-23-2021" value="22-23-2021" x="44.45" y="25.908" smashed="yes" rot="R270">
+<element name="X2" library="con-molex" package="22-23-2021" value="BATT" x="44.45" y="25.908" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="1462926" x="44.45" y="25.908" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="44.45" y="25.908" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MOLEX" x="44.45" y="25.908" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="25C3832" x="44.45" y="25.908" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="47.244" y="23.622" size="1.016" layer="21" ratio="10" rot="R90"/>
 </element>
 <element name="C1" library="resistor" package="C0805" value="4.7u" x="39.116" y="23.241" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.608" y="24.257" size="1.27" layer="25" rot="R270"/>
@@ -2775,7 +2775,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C9" library="resistor" package="C0805" value="4.7u" x="27.432" y="24.638" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.924" y="25.654" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="X3" library="con-molex" package="22-23-2031" value="22-23-2031" x="5.334" y="26.924" smashed="yes" rot="R90">
+<element name="X3" library="con-molex" package="22-23-2031" value="UART" x="5.334" y="26.924" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="1462950" x="5.334" y="26.924" size="0.0508" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MPN" value="22-23-2031" x="5.334" y="26.924" size="0.0508" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MF" value="MOLEX" x="5.334" y="26.924" size="0.0508" layer="27" font="vector" rot="R90" display="off"/>
@@ -2783,7 +2783,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="10.414" y="23.114" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="U$8" library="power" package="SOT223" value="AP2114H-3.3AP2114H" x="33.274" y="24.638" smashed="yes" rot="R90">
-<attribute name="DIGIKEY-PARTNO" value="AP2114H-3.3TRG1DICT-ND" x="33.274" y="24.638" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PARTNO" value="AP2114H-3.3TRG1DICT-ND" x="33.274" y="24.638" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$7" library="mcu" package="TQFP64-10X10" value="PIC24FJ256GB406PIC24FJ256GB406" x="28.956" y="12.192" smashed="yes" rot="R45">
 <attribute name="DIGIKEY_PARTNO" value="PIC24FJ256GB406-I/PT-ND" x="28.956" y="12.192" size="1.778" layer="27" rot="R45" display="off"/>
@@ -2839,7 +2839,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.318" y1="12.954" x2="10.16" y2="12.954" width="0.508" layer="1"/>
 </signal>
 <signal name="VCC">
-<contactref element="BATT" pad="1"/>
+<contactref element="X2" pad="1"/>
 <contactref element="R10" pad="2"/>
 <contactref element="C2" pad="1"/>
 <wire x1="36.601" y1="26.949" x2="38.1" y2="28.448" width="0.762" layer="1"/>
@@ -2881,7 +2881,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.984" y1="11.938" x2="11.684" y2="11.938" width="0.508" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="BATT" pad="2"/>
+<contactref element="X2" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>

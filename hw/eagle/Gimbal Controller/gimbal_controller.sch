@@ -9421,7 +9421,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </connects>
 <technologies>
 <technology name="AP2114H">
-<attribute name="DIGIKEY-PARTNO" value="AP2114H-3.3TRG1DICT-ND" constant="no"/>
+<attribute name="DIGIKEY_PARTNO" value="AP2114H-3.3TRG1DICT-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9833,7 +9833,7 @@ HALFBRIDGE</description>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0805" value="200"/>
 <part name="X4" library="con-molex" deviceset="22-23-2061" device="" value="MOTOR"/>
-<part name="BATT" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="X2" library="con-molex" deviceset="22-23-2021" device="" value="BATT"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
@@ -9866,7 +9866,7 @@ HALFBRIDGE</description>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="C9" library="resistor" deviceset="C-US" device="C0805" value="4.7u"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
-<part name="X3" library="con-molex" deviceset="22-23-2031" device=""/>
+<part name="X3" library="con-molex" deviceset="22-23-2031" device="" value="UART"/>
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 <part name="U$8" library="power" deviceset="AP2114H-3.3" device="" technology="AP2114H"/>
 <part name="U$7" library="mcu" deviceset="PIC24FJ256GB406" device="" technology="PIC24FJ256GB406"/>
@@ -9906,8 +9906,8 @@ HALFBRIDGE</description>
 <instance part="X4" gate="-4" x="175.26" y="104.14"/>
 <instance part="X4" gate="-5" x="175.26" y="101.6"/>
 <instance part="X4" gate="-6" x="175.26" y="99.06"/>
-<instance part="BATT" gate="-1" x="-55.88" y="261.62" rot="R90"/>
-<instance part="BATT" gate="-2" x="-53.34" y="261.62" rot="R90"/>
+<instance part="X2" gate="-1" x="-55.88" y="261.62" rot="R90"/>
+<instance part="X2" gate="-2" x="-53.34" y="261.62" rot="R90"/>
 <instance part="SUPPLY7" gate="GND" x="-139.7" y="254" rot="R270"/>
 <instance part="SUPPLY8" gate="GND" x="-134.62" y="220.98"/>
 <instance part="SUPPLY9" gate="GND" x="-88.9" y="220.98"/>
@@ -9995,7 +9995,7 @@ HALFBRIDGE</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="BATT" gate="-1" pin="S"/>
+<pinref part="X2" gate="-1" pin="S"/>
 <wire x1="-55.88" y1="259.08" x2="-55.88" y2="254" width="0.1524" layer="91"/>
 <label x="-55.88" y="254" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -10038,7 +10038,7 @@ HALFBRIDGE</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="BATT" gate="-2" pin="S"/>
+<pinref part="X2" gate="-2" pin="S"/>
 <wire x1="-53.34" y1="259.08" x2="-53.34" y2="254" width="0.1524" layer="91"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 </segment>
