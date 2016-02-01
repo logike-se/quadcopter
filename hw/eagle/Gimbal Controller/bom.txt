@@ -1,0 +1,35 @@
+Partlist exported from /Users/johanwestlund/quadcopter/hw/eagle/Gimbal Controller/gimbal_controller.sch at 01/02/16 21:28
+
+Part Value                          Device                         Package      Description                          DIGIKEY_PARTNO          MF    MPN        OC_FARNELL OC_NEWARK
+BATT 22-23-2021                     22-23-2021                     22-23-2021   .100" (2.54mm) Center Header - 2 Pin                         MOLEX 22-23-2021 1462926    25C3832  
+C1   4.7u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C2   4.7u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C3   0.1u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C4   0.1u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C5   0.1u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C6   0.1u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C7   0.1u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C8   10u                            C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+C9   4.7u                           C-USC0805                      C0805        CAPACITOR, American symbol                                                                        
+R1   200                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R2   200                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R3   200                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R4   200                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R5   200                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R6   200                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R7   2k                             R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R8   10k                            R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R9   2k                             R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R10  1.54k                          R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+R11  2k                             R-US_R0805                     R0805        RESISTOR, American symbol                                                                         
+U$1  FDC6327CFDC6327C               FDC6327CFDC6327C               SSOT6        MOSFET N/P HALFBRIDGE                FDC6327CCT-ND                                                
+U$2  FDC6327CFDC6327C               FDC6327CFDC6327C               SSOT6        MOSFET N/P HALFBRIDGE                FDC6327CCT-ND                                                
+U$3  FDC6327CFDC6327C               FDC6327CFDC6327C               SSOT6        MOSFET N/P HALFBRIDGE                FDC6327CCT-ND                                                
+U$4  FDC6327CFDC6327C               FDC6327CFDC6327C               SSOT6        MOSFET N/P HALFBRIDGE                FDC6327CCT-ND                                                
+U$5  FDC6327CFDC6327C               FDC6327CFDC6327C               SSOT6        MOSFET N/P HALFBRIDGE                FDC6327CCT-ND                                                
+U$6  FDC6327CFDC6327C               FDC6327CFDC6327C               SSOT6        MOSFET N/P HALFBRIDGE                FDC6327CCT-ND                                                
+U$7  PIC24FJ256GB406PIC24FJ256GB406 PIC24FJ256GB406PIC24FJ256GB406 TQFP64-10X10                                      PIC24FJ256GB406-I/PT-ND                                      
+U$8  AP2114H-3.3AP2114H             AP2114H-3.3AP2114H             SOT223       IC REG LDO 3.3V 1A SOT223            AP2114H-3.3TRG1DICT-ND                                       
+X1   PROG                           22-23-2061                     22-23-2061   .100" (2.54mm) Center Header - 6 Pin                         MOLEX 22-23-2061 1462922    27C1933  
+X3   22-23-2031                     22-23-2031                     22-23-2031   .100" (2.54mm) Center Header - 3 Pin                         MOLEX 22-23-2031 1462950    30C0862  
+X4   MOTOR                          22-23-2061                     22-23-2061   .100" (2.54mm) Center Header - 6 Pin                         MOLEX 22-23-2061 1462922    27C1933  

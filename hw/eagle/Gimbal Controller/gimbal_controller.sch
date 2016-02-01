@@ -9421,9 +9421,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </connects>
 <technologies>
 <technology name="AP2114H">
-<attribute name="CURRENT" value="1A" constant="no"/>
 <attribute name="DIGIKEY-PARTNO" value="AP2114H-3.3TRG1DICT-ND" constant="no"/>
-<attribute name="VOLTAGE" value="3.3V" constant="no"/>
 </technology>
 </technologies>
 </device>
