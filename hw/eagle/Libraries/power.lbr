@@ -115,9 +115,7 @@
 </connects>
 <technologies>
 <technology name="AP2114H">
-<attribute name="CURRENT" value="1A" constant="no"/>
-<attribute name="DIGIKEY-PARTNO" value="AP2114H-3.3TRG1DICT-ND" constant="no"/>
-<attribute name="VOLTAGE" value="3.3V" constant="no"/>
+<attribute name="DIGIKEY_PARTNO" value="AP2114H-3.3TRG1DICT-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
