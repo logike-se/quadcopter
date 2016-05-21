@@ -1,2 +1,5 @@
 
 *.cache
+/sw/gimbal/nbproject/private/
+/sw/gimbal/build/default/
+/sw/gimbal/dist/default/

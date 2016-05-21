@@ -38,8 +38,9 @@ public class MainThread extends Activity implements Handler.Callback{
 		switch(msg.what){
 		case Sender.SENSOR_THREAD:
 			if(msg.arg1 == Sensor.TYPE_ACCELEROMETER){
+				Accelerometer acc = (Accelerometer)msg.obj;
 				/* show values on display for testing */
-				xLabel.setText(Float.toString(((Accelerometer)msg.obj).angle.x));
+				xLabel.setText(Float.toString(acc.angle.x));
 			}
 		}
 
