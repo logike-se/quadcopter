@@ -2759,16 +2759,16 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_NEWARK" value="27C1933" x="45.085" y="8.763" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="40.005" y="16.383" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R7" library="resistor" package="R0805" value="2k" x="10.795" y="25.019" smashed="yes" rot="R90">
+<element name="R7" library="resistor" package="R0805" value="2.2k" x="10.795" y="25.019" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.303" y="23.876" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="R9" library="resistor" package="R0805" value="2k" x="10.795" y="29.337" smashed="yes" rot="R270">
+<element name="R9" library="resistor" package="R0805" value="2.2k" x="10.795" y="29.337" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.287" y="30.48" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="R10" library="resistor" package="R0805" value="1.54k" x="21.717" y="2.159" smashed="yes" rot="R180">
+<element name="R10" library="resistor" package="R0805" value="470" x="21.717" y="2.159" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.066" y="1.651" size="1.27" layer="25"/>
 </element>
-<element name="R11" library="resistor" package="R0805" value="2k" x="25.527" y="4.699" smashed="yes" rot="R45">
+<element name="R11" library="resistor" package="R0805" value="2.2k" x="25.527" y="4.699" smashed="yes" rot="R45">
 <attribute name="NAME" x="24.941959375" y="3.3700125" size="1.27" layer="25" rot="R45"/>
 </element>
 <element name="C9" library="resistor" package="C0805" value="4.7u" x="28.067" y="25.273" smashed="yes" rot="R270">

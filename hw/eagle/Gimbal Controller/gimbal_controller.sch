@@ -9859,10 +9859,10 @@ HALFBRIDGE</description>
 <part name="X1" library="con-molex" deviceset="22-23-2061" device="" value="PROG"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="2k"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="2k"/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="1.54k"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="2k"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="2.2k"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="2.2k"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="470"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="2.2k"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="C9" library="resistor" deviceset="C-US" device="C0805" value="4.7u"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
