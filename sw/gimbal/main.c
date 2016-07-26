@@ -8,13 +8,14 @@
 #include <p24FJ256GB406.h>
 #include "configuration.h"
 
-/* Function numbers for output compare modules (PWM) */
-#define OC1_OUT 13
-#define OC2_OUT 14
-#define OC3_OUT 15
-#define OC4_OUT 16
-#define OC5_OUT 17
-#define OC6_OUT 18
+/* Function numbers */
+#define OC1_OUT     13
+#define OC2_OUT     14
+#define OC3_OUT     15
+#define OC4_OUT     16
+#define OC5_OUT     17
+#define OC6_OUT     18
+#define U1TX_OUT    3
 
 #define THIS_OC 0b11111;
 #define PWM_DIV 255u;
@@ -62,10 +63,12 @@ int main() {
     OC5CON1bits.OCM = 0b110;
     OC6CON1bits.OCM = 0b110;            
     
-    /* Route OC outputs to pins */
+    /* Route functions to output pins */
     _RP21R = OC1_OUT;   // OC1 -> pin 4
+    _RP24R = U1TX_OUT;  // UART1TX -> pin 49
     
-    
+    /* Route input pins to function */
+    _U1RXR = 23;        // RP23 (pin 50) to UART1RX
     
     return 0;
 }
