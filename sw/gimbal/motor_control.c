@@ -4,6 +4,7 @@
 void clearControlRegisters();
 
 void PWMInit(unsigned int period){
+    
     clearControlRegisters();
 
     /* Set values that diverts from default values */

@@ -21,7 +21,8 @@ void M2SetDutyCycle();
 int main() {
     CLKDIVbits.RCDIV = 0;       // 8MHz internal clock
     
-    PWMInit(800);
+    PWMInit(800);               // Set PWM freq. ~10kHz
+    
     /* Route functions to output pins */
     _RP24R = U1TX_OUT;  // UART1TX -> pin 49
     
