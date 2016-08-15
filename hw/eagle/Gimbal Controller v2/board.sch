@@ -425,6 +425,14 @@
 <wire x1="-154.94" y1="-73.66" x2="-154.94" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-175.26" y="-73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$5"/>
+<wire x1="-182.88" y1="147.32" x2="-182.88" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$12"/>
+<wire x1="-182.88" y1="134.62" x2="-152.4" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="134.62" x2="-152.4" y2="147.32" width="0.1524" layer="91"/>
+<label x="-170.18" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 </nets>
 </sheet>

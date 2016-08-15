@@ -4,3 +4,4 @@
 /sw/gimbal/build/default/
 /sw/gimbal/dist/default/
 /hw/eagle/**/*.b#*
+/hw/eagle/**/*.s#*

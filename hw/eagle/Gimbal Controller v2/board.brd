@@ -387,6 +387,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="56" y="5"/>
 <vertex x="7" y="5"/>
 </polygon>
+<contactref element="U$2" pad="P$5"/>
+<contactref element="U$2" pad="P$12"/>
+<wire x1="13" y1="36.94" x2="18" y2="36.94" width="0" layer="19" extent="1-1"/>
+<wire x1="18" y1="19.16" x2="13" y2="19.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <via x="30" y="34" extent="1-16" drill="0.6" shape="square"/>
