@@ -388,6 +388,9 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="7" y="5"/>
 </polygon>
 </signal>
+<signal name="N$2">
+<via x="30" y="34" extent="1-16" drill="0.6" shape="square"/>
+</signal>
 </signals>
 </board>
 </drawing>
