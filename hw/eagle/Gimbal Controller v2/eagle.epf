@@ -353,16 +353,10 @@ UsedLibrary="/Users/johanwestlund/quadcopter/hw/eagle/Libraries/transistors.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 -22 599 377"
+Loc="50 23 649 422"
 State=2
 Number=0
-
-[Win_2]
-Loc="0 -22 599 377"
-State=0
-Number=2
 
 [Desktop]
 Screen="1280 800"
 Window="Win_1"
-Window="Win_2"

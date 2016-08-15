@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -81,25 +81,6 @@ Source:  Fairchild Semiconductor International ssot6_dim.pdf&lt;br&gt;
 <rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.5" layer="51" rot="R180"/>
 <rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.5" layer="51" rot="R180"/>
 </package>
-<package name="SIP12(SMA12)">
-<description>SIP12(SMA12)</description>
-<pad name="P$1" x="0" y="0" drill="1.05"/>
-<pad name="P$2" x="2.54" y="0" drill="1.05"/>
-<pad name="P$3" x="5.08" y="0" drill="1.05"/>
-<pad name="P$4" x="7.62" y="0" drill="1.05"/>
-<pad name="P$5" x="10.16" y="0" drill="1.05"/>
-<pad name="P$6" x="12.7" y="0" drill="1.05"/>
-<pad name="P$7" x="15.24" y="0" drill="1.05"/>
-<pad name="P$8" x="17.78" y="0" drill="1.05"/>
-<pad name="P$9" x="20.32" y="0" drill="1.05"/>
-<pad name="P$10" x="22.86" y="0" drill="1.05"/>
-<pad name="P$11" x="25.4" y="0" drill="1.05"/>
-<pad name="P$12" x="27.94" y="0" drill="1.05"/>
-<wire x1="-1.5" y1="-2" x2="29.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-2" x2="-1.5" y2="2" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="2" x2="29.5" y2="2" width="0.127" layer="21"/>
-<wire x1="29.5" y1="-2" x2="29.5" y2="2" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="FDC6327C">
@@ -120,96 +101,29 @@ HALFBRIDGE</description>
 </symbol>
 <symbol name="SMA6010">
 <description>3-Phase NPN/PNP BJT transistor package</description>
-<pin name="P$1" x="-35.56" y="33.02" length="middle" rot="R270"/>
-<pin name="P$2" x="-63.5" y="15.24" length="middle"/>
-<pin name="P$3" x="-50.8" y="5.08" length="middle" rot="R180"/>
-<pin name="P$4" x="-63.5" y="-5.08" length="middle"/>
-<pin name="P$5" x="-45.72" y="-27.94" length="middle" rot="R90"/>
-<pin name="P$6" x="-43.18" y="-5.08" length="middle"/>
-<pin name="P$7" x="-30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="P$8" x="-43.18" y="15.24" length="middle"/>
-<circle x="-55.88" y="15.24" radius="3.5921" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="17.78" x2="-58.42" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="15.24" x2="-58.42" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="15.24" x2="-55.88" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="15.24" x2="-63.5" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="17.78" x2="-58.42" y2="15.24" width="0.254" layer="94"/>
+<pin name="P$1" x="12.7" y="25.4" length="middle" rot="R270"/>
+<pin name="P$2" x="-12.7" y="7.62" length="middle"/>
+<pin name="P$3" x="7.62" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$4" x="-10.16" y="-12.7" length="middle"/>
+<pin name="P$5" x="12.7" y="-27.94" length="middle" rot="R90"/>
+<pin name="P$6" x="22.86" y="-12.7" length="middle"/>
+<pin name="P$7" x="43.18" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$8" x="22.86" y="7.62" length="middle"/>
+<circle x="-30.48" y="-5.08" radius="3.5921" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-2.54" x2="-33.02" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-5.08" x2="-33.02" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-5.08" x2="-30.48" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-2.54" x2="-30.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-5.08" x2="-30.48" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-7.62" x2="-30.48" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-5.08" x2="-38.1" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-2.54" x2="-30.48" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-5.08" x2="-33.02" y2="-5.08" width="0.254" layer="94"/>
 <polygon width="0.254" layer="94">
-<vertex x="-58.42" y="15.24"/>
-<vertex x="-57.15" y="15.24"/>
-<vertex x="-58.42" y="16.256"/>
+<vertex x="-33.02" y="-5.08"/>
+<vertex x="-33.02" y="-2.54"/>
+<vertex x="-30.48" y="-5.08"/>
 </polygon>
-<circle x="-35.56" y="15.24" radius="3.5921" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="17.78" x2="-38.1" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="15.24" x2="-38.1" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="15.24" x2="-35.56" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="15.24" x2="-43.18" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="17.78" x2="-38.1" y2="15.24" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-38.1" y="15.24"/>
-<vertex x="-36.83" y="15.24"/>
-<vertex x="-38.1" y="16.256"/>
-</polygon>
-<circle x="-15.24" y="15.24" radius="3.5921" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="17.78" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="15.24" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="15.24" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="15.24" x2="-22.86" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="17.78" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-17.78" y="15.24"/>
-<vertex x="-16.51" y="15.24"/>
-<vertex x="-17.78" y="16.256"/>
-</polygon>
-<circle x="-55.88" y="-5.08" radius="3.5921" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="-2.54" x2="-58.42" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="-5.08" x2="-58.42" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="-5.08" x2="-55.88" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="-5.08" x2="-63.5" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-2.54" x2="-58.42" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-55.88" y="-7.62"/>
-<vertex x="-55.88" y="-6.35"/>
-<vertex x="-56.896" y="-7.62"/>
-</polygon>
-<circle x="-35.56" y="-5.08" radius="3.5921" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="-2.54" x2="-38.1" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="-5.08" x2="-38.1" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="-5.08" x2="-35.56" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="-5.08" x2="-43.18" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="-2.54" x2="-38.1" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-35.56" y="-7.62"/>
-<vertex x="-35.56" y="-6.35"/>
-<vertex x="-36.576" y="-7.62"/>
-</polygon>
-<circle x="-15.24" y="-5.08" radius="3.5921" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-2.54" x2="-17.78" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-5.08" x2="-17.78" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-5.08" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-5.08" x2="-22.86" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-2.54" x2="-17.78" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-15.24" y="-7.62"/>
-<vertex x="-15.24" y="-6.35"/>
-<vertex x="-16.256" y="-7.62"/>
-</polygon>
-<wire x1="-55.88" y1="17.78" x2="-55.88" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="27.94" x2="-35.56" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="27.94" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="27.94" x2="-35.56" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-7.62" x2="-55.88" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-22.86" x2="-35.56" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="-22.86" x2="-35.56" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="12.7" x2="-55.88" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="12.7" x2="-35.56" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="12.7" x2="-15.24" y2="-2.54" width="0.254" layer="94"/>
-<pin name="P$9" x="-22.86" y="15.24" length="middle"/>
-<pin name="P$10" x="-10.16" y="5.08" length="middle" rot="R180"/>
-<pin name="P$11" x="-22.86" y="-5.08" length="middle"/>
-<pin name="P$12" x="-15.24" y="-27.94" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -232,32 +146,6 @@ HALFBRIDGE</description>
 <technology name="FDC6327C">
 <attribute name="DIGIKEY_PARTNO" value="FDC6327CCT-ND" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMA6010">
-<gates>
-<gate name="G$1" symbol="SMA6010" x="35.56" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="SIP12(SMA12)">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$11" pad="P$11"/>
-<connect gate="G$1" pin="P$12" pad="P$12"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
